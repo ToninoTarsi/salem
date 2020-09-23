@@ -263,7 +263,7 @@ class TestGraphics(unittest.TestCase):
         a[2, 2] = 2.2
         a[2, 4] = 1.9
         a[3, 3] = 9
-        cmap = copy.deepcopy(mpl.cm.get_cmap('jet'))
+        cmap = copy.copy(mpl.cm.get_cmap('jet'))
 
         # ll_corner (type geotiff)
         g = Grid(nxny=(5, 4), dxdy=(1, 1), x0y0=(0, 0), proj=wgs84,
